@@ -1,0 +1,48 @@
+/* CONTACTS section */
+.contacts{
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3rem;
+    /* border: white solid; */
+    margin-bottom: 40px;
+}
+.contacts .contacts__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: blue solid; */
+}
+
+.contacts .contacts__container .contacts__map {
+    flex: 1 1 50rem;
+    /* border: pink solid;  */
+    display: flex;
+    justify-content: center;
+    /* padding: 10px; */
+    margin: 10px;
+}
+
+.contacts .contacts__container .contacts__nav {
+    flex: 1 1 20rem;
+    /* border: green solid; */
+    /* margin-left: 30px; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    margin-left: 120px;
+    /* align-items: flex-end; */
+    /* align-content: flex-end;    
+    padding-right: 85px; */
+}
+
+li { list-style-type: none}
+
+.social__icons {
+    display: flex;
+    flex-direction: row;
+    
+}
+ i { margin: 5px}

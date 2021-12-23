@@ -1,0 +1,55 @@
+/*INTRO SECTION*/
+.intro{
+    display: flex;
+    align-items: center;
+    height: 380px;
+    background: black;
+    background-image: url(/coinpc_files/img/img1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* border: #ccc solid; */
+}
+
+.intro .intro__container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  /* justify-content: flex-start; */
+  margin: 20%;
+  flex-wrap: wrap;
+  width: auto;
+  /* display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: stretch; */
+  /* border: blue solid; */
+
+} 
+
+.intro__heading {
+  margin-bottom: 10px;
+}
+
+.intro__description {}
+
+.main__btn {
+  border-radius: 26.5px;
+  width: 200px;
+  height: 40px;
+  background: linear-gradient(#8c0102, #c70304);
+  margin-top: 20px;
+  border: none;
+}
+
+.main__btn:hover {
+  background: linear-gradient(#580000, #700202);
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+

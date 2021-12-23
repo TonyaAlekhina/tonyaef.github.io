@@ -1,0 +1,119 @@
+/* FOOTER section */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    top: 0;
+    width: auto;
+    background: #222222;
+}
+
+.footer .footer__container {
+    /* border: green solid; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+    font-size: 13px;
+}
+
+.footer .footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: yellow solid; */
+    width: 600px;
+    margin: 0 20px;
+}
+
+.footer .logo {
+    /* border: pink solid; */
+    padding-left: 20px;
+
+}
+
+
+.website__rights  {
+    /* border: blue solid; */
+    display: flex;
+    align-items: center;
+}
+
+.footer__phone {
+    /* border: blue solid; */
+    display: flex;
+    align-items: center;
+}
+
+.phone__picture {
+    width: 25%;
+}
+
+@media screen and (max-width: 820px) {
+    .footer__container {
+        width: auto; height: auto;
+        flex-direction: column;
+    }
+
+    .footer__links {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  
+    #footer__logo {
+      margin-bottom: 2rem;
+    }
+    
+    .footer__phone {
+        /* border: blue solid; */
+        order:1;
+    }
+    .website__rights {
+        order: 2;
+
+    }
+  
+  }
+  
+  @media screen and (max-width: 480px) {
+    .footer__links {
+      margin: 0;
+      padding: 10px;
+      width: 100%;
+    }
+  }
+
+/* @media screen and (max-width: 960px) {
+    .footer__container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 70px;
+      z-index: 1;
+      width: 100%;
+      max-width: 1300px;
+      padding: 0;
+    }
+    .footer .logo {
+        border: pink solid;
+        padding-left: 10px;
+    }
+    .website__rights  {
+        border: blue solid;
+        order: 2;
+    }
+    
+    .footer__phone {
+        border: blue solid;
+        display: flex;
+        align-items: center;
+        order: 1;
+    }
+    
+    .phone__picture {
+        width: 10%;
+    }
+} */

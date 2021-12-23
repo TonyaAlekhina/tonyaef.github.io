@@ -1,0 +1,59 @@
+/* 
+<div class="feature">
+      <div class="feature__container">
+        <div class="feature__content">
+          <h1>НУЖНА ПОМОЩЬ В СБОРКЕ КОМПЬЮТЕРА</h1>
+          <h1>МАЙНИНГ ФЕРМЫ ИЛИ РЕМОНТА КОМПЬЮТЕРА?</h1>
+          <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+          <button class="main__btn btn1"><a href="#">Ваше имя</a></button>
+          <button class="main__btn btn1"><a href="#">Ваш номер телефона</a></button>
+          <button class="main__btn btn1"><a href="#">Позвонить мне</a></button>
+        </div>
+      </div>
+</div>
+*/
+
+/* FEATURE section */
+
+.feature {
+    background-image: url("/coinpc_files/img/ready1.png");
+    background-size: cover;
+    border: black .01px solid;
+    margin-bottom: 40px;
+}
+
+.feature .feature__container {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  margin: 30px 85px;
+  padding: 50px;
+  flex-wrap: wrap;
+  width: auto;
+  
+}
+
+.h1__des {
+  line-height: 2.5rem;
+}
+
+.btn1 {
+  background-color: transparent;
+  border: .5px white solid;
+  border-radius: 26.5px;
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.btn__text {
+  color: white;
+}
+.btn1:hover{
+  background-color: white; 
+  transition: all 0.3s ease;
+}
+
+.btn__text:hover {
+  color: black;
+}
