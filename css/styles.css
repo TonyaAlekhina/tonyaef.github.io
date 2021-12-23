@@ -49,7 +49,7 @@ html {
 body {
     background-color: black;
     color: #fff;
-    background-image: url(/coinpc_files/img/fon.png);
+    background-image: url(./img/fon.png);
     background-repeat: no-repeat;
     background-size: cover ;
     background-position: top 500px right 50%;

@@ -16,7 +16,7 @@
 /* FEATURE section */
 
 .feature {
-    background-image: url("/coinpc_files/img/ready1.png");
+    background-image: url("./img/ready1.png");
     background-size: cover;
     border: black .01px solid;
     margin-bottom: 40px;
