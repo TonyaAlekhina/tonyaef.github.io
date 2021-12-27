@@ -1,10 +1,9 @@
 /*ABOUT US section*/
 
 .about {
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     padding-bottom: 3rem;
-    /* border: white solid; */
     margin-bottom: 20px;
 }
 
@@ -13,44 +12,47 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /* border: blue solid; */
+    flex-direction: column;
+    margin: 0 10%;
 }
 
 .about .about__container .about__image{
-    flex:1 1 40rem;
-    /* display: flex;
-    justify-content: center; */
-    width: 50%;
-    max-width: 400px;
-    margin: 20px 50px;
+    flex: 1;
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+}
+
+.about .about__container .about_image_border {
+    width: 96%;
+    border: 1px solid red;
+    margin: -20px 0;
+    height: calc(100% + 22px);
+    z-index: -10;
+    position: absolute;
+    top: 8px;
+    right: 2%;
 }
 
 .about .about__container .about__img{    
     width:100%;
     height: auto;
+    z-index: 11;
 }
 
 /*description*/
 .about .about__container .about__content{
-    flex: 1 1 40rem;
-    /* border: green solid; */
-    display: flex;
+    flex: 1;
     align-self: stretch;
     font-size: 14px;   
 }
 
-.about .about__container .about__content p{
-    /* padding:1rem 0; */
+.about .about__container .about__content .about__text {
     width: 100%;
     height: auto;
-    /* border: purple solid; */
     padding-top: 10px;
-    padding-right: 30px; 
-    font-size: 14px; 
-    margin: 0 50px;
-    
-}
-
-.about__text {
+    padding-right: 30px;
     line-height: 2rem;
+    margin-top: 20px;
+    
 }

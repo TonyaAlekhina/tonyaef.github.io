@@ -4,224 +4,172 @@
 @import url("./feature.css");
 @import url("./contacts.css");
 @import url("./footer.css");
+@import url("./navbar.css");
+@import url("./popup.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
-html {
-    font-size: 12px;
-    @media screen and (min-width: 1px) and (max-width: 359px) {
-        font-size: 12px;
-    }   
-    @media screen and (min-width: 360px) and (max-width: 450px) {
-        font-size: 13px;
-    }
-    @media screen and (min-width: 451px) and (max-width: 599px) {
-        font-size: 14px;
-    }
-    @media screen and (min-width: 600px) and (max-width: 767px) {
-        font-size: 15px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1040px) {
-        font-size: 11px;
-    }
-    @media screen and (min-width: 1023px) and (max-width: 1300px) {
-        font-size: 12px;
-    }
-    @media screen and (min-width: 1301px) and (max-width: 1400px) {
-        font-size: 13px;
-    }
-    @media screen and (min-width: 1401px) and (max-width: 1600px) {
-        font-size: 14px;
-    }
-    @media screen and (min-width: 1601px) and (max-width: 1921px)  {
-        font-size: 17px;
-    }
-    @media screen and (min-width: 1922px) and (max-width: 2560px) {
-        font-size: 21px;
-    }
-}
-
-* {
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-}
-body {
-    background-color: black;
+  }
+
+  body {
     color: #fff;
-    background-image: url(./img/fon.png);
-    background-repeat: no-repeat;
-    background-size: cover ;
-    background-position: top 500px right 50%;
+    background: url(/img/fon.png), black no-repeat 0 0;
+    background-size: cover;
     font-family: Roboto;
-}
+  }
 
-.navbar { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 55px;
-    top: 0;
-    width: auto;
-    background: #222222;
-    z-index: 999;
-}
-
-.navbar__container { 
-    display: flex;
-    justify-content: space-evenly;
-    z-index: 1;
-    width: 100%;
-    height: 60px;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
-    /* border: yellow solid; */
-}
-.navbar__logo {
-  margin-top: 15px;
-  margin-left: 30px;
-}
-.logo img{ 
-    display: flex;
-    align-items: center;
-    /* width: 117px; */
-    height: auto;
-    /* border: #ccc solid; */
-    /* margin-top: 15px;
-    margin-left: 60px; */
-
-}
-
-.navbar__menu { 
-  /* border: blue solid; */
-  height: auto;
-  display: flex;
-  align-items: center;
-  list-style: none;
-  margin-right: 50px;
-  font-size: 15px;
-}
-
-.navbar__item { 
-    height: 100%;    
-}
-
-.navbar__links { 
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 125px;
+  a {
     text-decoration: none;
-    height: 100%;
-    transition: all 0.3s ease;
-}
-.navbar__links:hover {
-    background-color: #c50304;
-    transition: all 0.3s ease;  
-}
-
-.navbar__phone .phone {
-  /* border: purple solid; */
-  display: flex;
-  justify-content: flex-end;
-  margin-left: 40px;
-  align-items: center;
-  padding: 0 1rem;
-  width: 100%;
-  font-weight: bold;
+    color: white;
   }
 
-.phone__picture{
-    padding-right: 10px;
-    width: 15%;
-}
+    h1 {
+      font-size: 22px;
+    }
 
-/* Burger menu */
-@media screen and (max-width: 960px) {
-    .navbar__container {
-      /* border: blue solid; */
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      height: 60px;
-      z-index: 1;
-      width: 100%;
-      max-width: 1300px;
-      padding: 0;
+    h4, button {
+      font-size: 16px;
     }
-  
-    .navbar__menu {
 
-      display: grid;
-      grid-template-columns: auto;
-      margin: 0;
-      width: 100%;
-      position: absolute;
-      top: -1000px;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: -1;
+    p {
+      font-size: 16px;
     }
-  
-    .navbar__menu.active {
-      background: #222222;
-      top: 100%;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 99;
-      height: 60vh;
-      font-size: 1.6rem;
+
+    @media screen and (min-width: 451px) {
+      h1 {
+        font-size: 26px;
+      }
+      .services .services__container,
+      .about .about__container,
+      .feature .feature__container,
+      .contacts .contacts__container,
+      .footer .footer__container,
+      .navbar .navbar__container {
+        margin: 0 20%;
+      }
+      .intro{
+        background-position: 60%;
     }
-  
-    #navbar__logo {
-      padding-left: 25px;
     }
-  
-    .navbar__toggle .bar {
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
-      transition: all 0.3s ease-in-out;
-      background-color: #c50304;
+
+    @media screen and (min-width: 600px) {
+      .intro .intro__container {
+        width: auto;
+      } 
+      .intro .main__btn, .services .services__container .main__btn {
+        width: auto;
+        padding: 10px 15px;
+      }
+      .services .services__container .services__card {
+        min-width: 360px;
+      }
     }
-  
-    .navbar__item {
-      width: 100%;
+
+    @media screen and (min-width: 768px) {
+        h1 {
+          font-size: 32px;
+        }
+        h4 {
+          font-size: 20px;
+        }
+        p, button {
+          font-size: 18px;
+        }
+        .services .services__container,
+        .about .about__container,
+        .feature .feature__container,
+        .contacts .contacts__container,
+        .footer .footer__container,
+        .navbar .navbar__container {
+          margin: 0 15%;
+        }
+        .feature .feature__container .feature_contact_container {
+          flex-direction: row;
+        }
     }
-  
-    .navbar__links {
-      display: block;
-      padding: 12px 24px;
-      color: #333;
-      font-family:Roboto, sans-serif;
-      font-size: 20px;
-      font-weight: 600;
-      text-decoration: none;
+    
+    @media screen and (min-width: 1023px) {
+      .contacts .contacts__container {
+        flex-direction: row;
+      }
+
+      .contacts .map_inside_container {
+        display: block;
+      }
+      
+      .contacts .map_outside_container {
+          display: none;
+      }
+      .footer {
+        height: 60px;
+      }
+      .footer .footer__container {
+        flex-direction: row;
+      }
+      .footer__container .footer__phone {
+        order: 2;
     }
-  
-    #mobile-menu {
-      position: absolute;
-      top: 20%;
-      right: 5%;
-      transform: translate(5%, 20%);
+    
+    .footer__container .website__rights  {
+        order: 1;
     }
-  
-    .navbar__toggle .bar{
-      display: block;
-      cursor: pointer;
     }
-  
-    #mobile-menu.is-active .bar:nth-child(2) {
-      opacity: 0;
+
+    @media screen and (min-width: 1301px) {
+      .intro {
+        background-image: url("../img/img1.png");
+      }
     }
-  
-    #mobile-menu.is-active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
+    @media screen and (min-width: 1401px) {
+      .feature {
+        height: 400px;
+      }
+      .feature .feature__container .feature_image_container .feature_img {
+        display: block;
+      }
     }
-  
-    #mobile-menu.is-active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
+    @media screen and (min-width: 1601px)  {
+        h1 {
+          font-size: 40px;
+        }
+        h4 {
+          font-size: 26px;
+        }
+        .intro .main__btn {
+          font-size: 24px;
+        }
+        .about .about__container {
+          flex-direction: row;
+        }
+        .about .about__container .about__image {
+          margin-right: 30px;
+        }
     }
-  }
+
+    .contact_input, .contact_button {
+      background-color: transparent;
+      border: .5px white solid;
+      border-radius: 26.5px;
+      width: 200px;
+      height: 40px;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+    .contact_input {
+      text-align: center;
+    }
+    .contact_input, .contact_button, .contact_input::placeholder {
+      color: white;
+    }
+    .contact_button:hover {
+      background-color: white; 
+      transition: all 0.3s ease;
+    }
+    
+    .contact_text:hover {
+      color: black;
+    }

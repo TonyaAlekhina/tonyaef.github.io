@@ -9,6 +9,7 @@
   .add_str {
     display:flex;
     justify-content: center;
+    margin-bottom: 20px;
   }
 
   .services .services__container {
@@ -17,34 +18,39 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: stretch;
-    margin: auto 70px;
     background-color: black;
+    margin: 0 10%;
     /* border: blue solid; */
   }
   
   .services .services__container .services__card{
       flex: 1 1 20rem;
-      margin: 0.5rem;
+      margin: 20px 10px;
       padding: 2rem;
       text-align: center;
-      /* border: grey solid; */
+      border: grey solid;
       align-content: space-evenly;
       box-shadow: 5px 5px 50px rgb(170, 2, 2);
   }
+
+  .services .services__container .main__btn {
+    border-radius: 26.5px;
+    padding: 8px;
+    background: linear-gradient(#8c0102, #c70304);
+    margin-top: 20px;
+    border: none;
+  }
   
-  .card__img {
+  .services .services__container .card__img {
     object-fit: contain;
     margin-bottom: 15px;
-  }
-  
-  .img2 {
-    width: 95%;
-    height: 58%;
+    max-width: 100%;
+    max-height: 40%;
+    min-height: 40%;
   }
 
-  .img3 {
-    width: 85%;
-    height: 58%;
+  .services .services__container .title {
+    margin-bottom: 20px;
   }
   
   b {color: red}; 

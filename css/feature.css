@@ -16,44 +16,43 @@
 /* FEATURE section */
 
 .feature {
-    background-image: url("../img/ready1.png");
+    background-image: url("../img/needhelp.png");
     background-size: cover;
-    border: black .01px solid;
     margin-bottom: 40px;
+    height: 600px;
+    width: 100%;
+    position: relative;
 }
 
 .feature .feature__container {
+  margin: auto 10%;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content:flex-start;
-  margin: 30px 85px;
-  padding: 50px;
-  flex-wrap: wrap;
-  width: auto;
-  
 }
 
-.h1__des {
+.feature .feature__container .feature__content .h1__des {
   line-height: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.btn1 {
-  background-color: transparent;
-  border: .5px white solid;
-  border-radius: 26.5px;
-  width: 200px;
-  height: 40px;
-  margin-top: 20px;
-  margin-right: 10px;
-}
-.btn__text {
-  color: white;
-}
-.btn1:hover{
-  background-color: white; 
-  transition: all 0.3s ease;
+.feature .feature__container .feature_image_container {
+  height: 100%;
 }
 
-.btn__text:hover {
-  color: black;
+.feature .feature__container .feature_image_container .feature_img {
+  display: none;
+  position: absolute;
+  top: -65px;
+}
+
+.feature .feature__container .feature_contact_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature .feature__container .feature_contact_container .feature_contact_element {
+  width: 25%;
 }
