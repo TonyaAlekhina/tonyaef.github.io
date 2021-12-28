@@ -30,6 +30,9 @@
     h1 {
       font-size: 22px;
     }
+    h3 {
+      font-size: 18px;
+    }
 
     h4, button {
       font-size: 16px;
@@ -39,9 +42,12 @@
       font-size: 16px;
     }
 
-    @media screen and (min-width: 451px) {
+    @media screen and (min-width: 450px) {
       h1 {
         font-size: 26px;
+      }
+      h3 {
+        font-size: 20px;
       }
       .services .services__container,
       .about .about__container,
@@ -67,11 +73,17 @@
       .services .services__container .services__card {
         min-width: 360px;
       }
+      .services__container .services__card .main__btn {
+        bottom: 40px;
+      }
     }
 
     @media screen and (min-width: 768px) {
         h1 {
           font-size: 32px;
+        }
+        h3 {
+          font-size: 26px;
         }
         h4 {
           font-size: 20px;
@@ -148,6 +160,9 @@
     @media screen and (min-width: 1601px)  {
         h1 {
           font-size: 40px;
+        }
+        h3 {
+          font-size: 30px;
         }
         h4 {
           font-size: 26px;

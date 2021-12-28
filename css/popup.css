@@ -10,7 +10,6 @@
     overflow-x: hidden;
     overflow-y: auto;
     transition: all 0.2ms ease 0;
-    border: blue solid;
 }
 
 .popup:target {

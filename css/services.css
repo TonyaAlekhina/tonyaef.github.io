@@ -24,24 +24,35 @@
   
   .services .services__container .services__card{
       flex: 1;
+      position: relative;
       margin: 20px 10px;
       padding: 2rem;
       text-align: center;
       align-content: space-evenly;
       box-shadow: 5px 5px 50px rgb(170, 2, 2);
+      height: 540px;
   }
 
-  .services .services__container .main__btn {
+  .services__container .services__card .main__btn {
+    position: absolute;
     border-radius: 26.5px;
     padding: 8px;
     background: linear-gradient(#c70304, #8c0102);
-    margin: 20px 0;
     border: none;
+    -webkit-tap-highlight-color: transparent;
+    max-height: 40px;
+    bottom: 20px;
+    left: calc(50% - 70px);
+  }
+
+  .services__container .services__card .des {
+    height: 200px;
+    overflow-y: auto;
   }
   
   .services .services__container .card__img {
     object-fit: contain;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     max-width: 100%;
     max-height: 40%;
     min-height: 40%;
