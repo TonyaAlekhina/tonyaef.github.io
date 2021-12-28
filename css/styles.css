@@ -95,8 +95,8 @@
     
     @media screen and (min-width: 1023px) {
       .contacts {
-         padding-bottom: 3rem;
-    margin-bottom: 40px;
+        padding-bottom: 3rem;
+        margin-bottom: 40px;
       }
       .contacts .contacts__container {
         flex-direction: row;
