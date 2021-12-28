@@ -79,11 +79,13 @@
   .navbar__container .navbar__phone {
     visibility: hidden;
     order: 2;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .navbar__container .phone__picture {
     visibility:visible;
     order: 1;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .navbar__menu {

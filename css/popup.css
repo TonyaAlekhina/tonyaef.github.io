@@ -10,6 +10,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     transition: all 0.2ms ease 0;
+    border: blue solid;
 }
 
 .popup:target {
@@ -63,6 +64,7 @@
     height: 100%;
     top: 0;
     left: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn2 {
@@ -73,9 +75,11 @@
     height: 40px;
     margin-top: 20px;
     margin-right: 10px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
-.btn2 {
+.btn2__text {
     font-size: 15px;
+    -webkit-tap-highlight-color: transparent;
 }

@@ -35,4 +35,5 @@
 .main__btn:hover {
   background: linear-gradient(#580000, #700202);
   transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
 }
