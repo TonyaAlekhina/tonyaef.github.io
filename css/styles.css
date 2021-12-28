@@ -84,7 +84,8 @@
         .feature .feature__container,
         .contacts .contacts__container,
         .footer .footer__container,
-        .navbar .navbar__container {
+        .navbar .navbar__container,
+        .contacts__map .map_inside_container {
           margin: 0 15%;
         }
         .feature .feature__container .feature_contact_container {
@@ -93,6 +94,10 @@
     }
     
     @media screen and (min-width: 1023px) {
+      .contacts {
+         padding-bottom: 3rem;
+    margin-bottom: 40px;
+      }
       .contacts .contacts__container {
         flex-direction: row;
       }

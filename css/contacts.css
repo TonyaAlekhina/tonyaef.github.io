@@ -2,8 +2,8 @@
 .contacts{
     background-size: cover;
     background-position: center;
-    padding-bottom: 3rem;
-    margin-bottom: 40px;
+    /* padding-bottom: 3rem; */
+    /* margin-bottom: 40px; */
 }
 .contacts .contacts__container {
     display: flex;
