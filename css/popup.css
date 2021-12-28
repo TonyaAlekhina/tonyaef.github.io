@@ -38,10 +38,16 @@
 }
 .popup__close{
     position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 20px; 
+    right: -20px;
+    top: -20px;
+    font-size: 10px;
     color: white;
+    width: 20px;
+    height: 20px;
+    padding: 3px 0 0 5px;
+    text-align: left;
+    border-radius: 50%;
+    background: linear-gradient(#c70304, #8c0102);
 }
 .popup__title{
     margin: 0px 0px 1em 0px;
@@ -60,8 +66,8 @@
 }
 
 .btn2 {
-    background-color: transparent;
-    border: .5px white solid;
+    background: linear-gradient(#c70304, #8c0102);
+    border: none;
     border-radius: 26.5px;
     width: 200px;
     height: 40px;
@@ -69,11 +75,7 @@
     margin-right: 10px;
 }
 
-.btn2:hover{
-    background-color: red; 
-    transition: all 0.3s ease;
-  }
 
-.btn2__text:hover {
-    color: white;
-  }
+.btn2 {
+    font-size: 15px;
+}

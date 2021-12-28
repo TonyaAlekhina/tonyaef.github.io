@@ -22,10 +22,8 @@
     <nav class="navbar">
       <div class="navbar__container">
         <a href="#home" class="navbar__logo logo"><img src="./img/logo.png" alt="CoinPC"></a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="navbar__toggle icon" id="mobile-menu">
+                <div class="burger"></div> 
             </div> 
             <ul class="navbar__menu">
                 <li class="navbar__item">
@@ -67,21 +65,21 @@
             <img class="card__img img1" src="./img/assem.png">
             <h2 class = "title">СБОРКА <b>ПК</b></h2>
             <p class="des">Следует отметить, что реализация намеченных плановых заданий играет определяющее значение для глубокомысленных рассуждений. Таким образом, перспективное </p>
-            <button class="main__btn"><a href="#">Заказать услугу</a></button>
+            <button class="main__btn"><a href="#popup">Заказать услугу</a></button>
           </div>
 
           <div class="services__card">
             <img class="card__img img2" src="./img/remont.png">
             <h2 class = "title">РЕМОНТ <b>ПК</b></h2>
             <p class="des">Следует отметить, что реализация намеченных плановых заданий играет определяющее значение для глубокомысленных рассуждений. Таким образом, перспективное</p>
-            <button class="main__btn"><a href="#">Заказать услугу</a></button>
+            <button class="main__btn"><a href="#popup">Заказать услугу</a></button>
           </div>
 
           <div class="services__card">
             <img class="card__img img3" src="./img/mining.png">
             <h2 class = "title">СБОРКА <b>МАЙНИНГ ФЕРМ</b></h2>
             <p class="des">Следует отметить, что реализация намеченных плановых заданий играет определяющее значение для глубокомысленных рассуждений. Таким образом, перспективное</p>
-            <button class="main__btn"><a href="#">Заказать услугу</a></button>
+            <button class="main__btn"><a href="#popup">Заказать услугу</a></button>
           </div>
 
         </div>
@@ -118,7 +116,7 @@
           <div class="feature_contact_container">
             <input type="text" class="contact_input" placeholder="Ваше имя" required>
             <input type="tel" pattern="\+[0-9]{1,3}\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required class="contact_input" placeholder="Ваш номер телефона">
-            <button class="contact_button"><a class="contact_text" href="#">Позвонить мне</a></button>
+            <button class="contact_button"><a class="contact_text" href="#popup__response">Позвонить мне</a></button>
           </div>
         </div>
         <div class="feature_image_container">
@@ -197,37 +195,27 @@
         <a href="#header" class="popup__area"></a>
         <div class="popup__body">
           <div class="popup__content">
-            <a href="#" class="popup__close">X</a>
+            <a href="#" class="popup__close">✖</a>
             <div class="popup__title"><h2>Оставьте заявку</h2></div>
             <div class="popup__text"><p>И мы перезвоним Вам в ближайшее время</p></div>
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Ваш телефон">
-            <button class="btn2"><a class="btn2__text" href="#">Позвонить</a></button>
+            <input type="text" class="contact_input" placeholder="Ваше имя"  onClick="this.setSelectionRange(0, this.value.length)" required>
+            <input type="tel" pattern="\+[0-9]{1,3}\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required  onClick="this.setSelectionRange(0, this.value.length)" class="contact_input" placeholder="Ваш номер телефона">
+            <button class="btn2"><a class="btn2__text" href="#popup__response">Позвонить мне</a></button>
           </div>
         </div>
       </div>
 
-      <!-- <div class="popup" id="popup">
+      <div class="popup" id="popup__response">
         <a href="#header" class="popup__area"></a>
         <div class="popup__body">
           <div class="popup__content">
-            <a href="#" class="popup__close">X</a>
-            <div class="popup__title"><h2>Оставьте заявку</h2></div>
-            <div class="popup__text"><p>И мы перезвоним Вам в ближайшее время</p></div>
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Ваш телефон">
-            <button class="btn2"><a class="btn2__text" href="#">Позвонить</a></button>
-          </div>
-        </div>
-      </div> -->
-</body>
-</html>
-
-<!-- <div class="popup__body">
-          <div class="popup__content">
-            <a href="#" class="popup__close">X</a>
+            <a href="#" class="popup__close">✖</a>
             <div class="popup__title"><h2>Спасибо за заявку</h2></div>
             <div class="popup__text"><p>Мы свяжемся с Вами в ближайшее время</p></div>
           </div>
         </div>
-      </div> -->
+      </div>
+
+      <script src="./app.js"></script>
+</body>
+</html>

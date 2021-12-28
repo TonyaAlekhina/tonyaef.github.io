@@ -24,11 +24,10 @@
   }
   
   .services .services__container .services__card{
-      flex: 1 1 20rem;
+      flex: 1;
       margin: 20px 10px;
       padding: 2rem;
       text-align: center;
-      border: grey solid;
       align-content: space-evenly;
       box-shadow: 5px 5px 50px rgb(170, 2, 2);
   }
@@ -36,8 +35,8 @@
   .services .services__container .main__btn {
     border-radius: 26.5px;
     padding: 8px;
-    background: linear-gradient(#8c0102, #c70304);
-    margin-top: 20px;
+    background: linear-gradient(#c70304, #8c0102);
+    margin: 20px 0;
     border: none;
   }
   

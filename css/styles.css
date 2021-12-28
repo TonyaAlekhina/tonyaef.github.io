@@ -112,11 +112,19 @@
       }
       .footer__container .footer__phone {
         order: 2;
-    }
+      }
     
-    .footer__container .website__rights  {
-        order: 1;
-    }
+      .footer__container .website__rights  {
+          order: 1;
+      }
+      .popup__close {
+        right: -40px;
+        top: -40px;
+        padding: 7px 0 0 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+      }
     }
 
     @media screen and (min-width: 1301px) {
