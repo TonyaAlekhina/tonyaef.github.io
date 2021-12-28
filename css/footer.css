@@ -23,6 +23,7 @@
     align-items: center;
     font-weight: 800;
     order: 1;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .footer__container .website__rights  {

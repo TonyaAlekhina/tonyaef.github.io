@@ -45,6 +45,7 @@
 .navbar__links:hover {
     background-color: #c50304;
     transition: all 0.3s ease;  
+    -webkit-tap-highlight-color: transparent;
 }
 
 .navbar__container .navbar__phone {
@@ -85,7 +86,7 @@
   .navbar__container .phone__picture {
     visibility:visible;
     order: 1;
-    -webkit-tap-highlight-color: transparent;
+    text-decoration:none;
   }
 
   .navbar__menu {
@@ -114,6 +115,7 @@
     width: 25px;
     height: 25px;
     cursor: pointer;
+    text-decoration:none;
   }
 
   .burger {
