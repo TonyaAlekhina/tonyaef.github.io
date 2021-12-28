@@ -60,89 +60,87 @@
 
 /* Burger menu */
 @media screen and (max-width: 1300px) { 
-    .navbar__container {
-      position: relative;
-      display: flex;
-      /* justify-content: space-between; */
-      height: 60px;
-      z-index: 1;
-      max-width: 1300px;    
-    }
-
-    #navbar__logo {
-      padding-left: 25px;
-    }
-    
-    .burger {
-      margin-left: 10px;
-    }
-
-    .navbar__container .navbar__phone {
-      visibility: hidden;
-      order: 2;
-    }
-
-    .navbar__container .phone__picture {
-      visibility:visible;
-      order: 1;
-    }
-  
-    .navbar__menu {
-      display: grid;
-      justify-content: center;
-      grid-template-columns: auto;
-      width: 100%;
-      position: absolute;
-      top: -1000px;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: -1;
-    }
-    .navbar__menu.active {
-      background: #222222;
-      top: 100%;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 99;
-      height: 50vh;
-      font-size: 1.5rem;
-    }
-
-    /* burger icon */
-    .icon {
-      width: 25px;
-      height: 25px;
-      cursor: pointer;
-    }
-
-    .burger {
-      width: 10px;
-      height: 4px;
-      transform: translate(-50%, -50%);
-      background-color: #c50304;
-      transition: 0.5s;
-      display: inline-block;
-      font-weight: 200;
-    }
-
-    .burger::after,
-    .burger::before {
-      content: "";
-      height: 4px;
-      position: absolute;
-      background-color: #c50304;
-      transition: 0.5s;
-      display: inline-block;
-    }
-
-    .burger::before{
-      top: -10px;
-      width: 25px;
-    }
-
-    .burger::after{
-      top: 10px;
-      width: 30px;
-    }
-
+  .navbar__container {
+    position: relative;
+    display: flex;
+    height: 60px;
+    z-index: 1;
+    max-width: 1300px;    
   }
+
+  #navbar__logo {
+    padding-left: 25px;
+  }
+  
+  .burger {
+    margin-left: 10px;
+  }
+
+  .navbar__container .navbar__phone {
+    visibility: hidden;
+    order: 2;
+  }
+
+  .navbar__container .phone__picture {
+    visibility:visible;
+    order: 1;
+  }
+
+  .navbar__menu {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+  .navbar__menu.active {
+    background: #222222;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 50vh;
+    font-size: 1.5rem;
+  }
+
+  /* burger icon */
+  .icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .burger {
+    width: 10px;
+    height: 4px;
+    transform: translate(-50%, -50%);
+    background-color: #c50304;
+    transition: 0.5s;
+    display: inline-block;
+    font-weight: 200;
+  }
+
+  .burger::after,
+  .burger::before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    background-color: #c50304;
+    transition: 0.5s;
+    display: inline-block;
+  }
+
+  .burger::before{
+    top: -10px;
+    width: 25px;
+  }
+
+  .burger::after{
+    top: 10px;
+    width: 30px;
+  }
+}
