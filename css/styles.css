@@ -8,6 +8,7 @@
 @import url("./popup.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
+
   * {
     box-sizing: border-box;
     margin: 0;
@@ -21,6 +22,10 @@
     background-size: cover;
     font-family: Roboto;
   }
+
+  input::-webkit-input-placeholder {font-size:17px}
+  input {font-size:17px}
+ 
 
   a {
     text-decoration: none;
